@@ -196,3 +196,8 @@ if '10' == 10:
     print(True)
 else:
     print(False)
+
+employee_hr = int(input('enter work Hours : '))
+work_rate_per_hr = int(input('Enter rate per hour: '))
+emp_earnings = employee_hr * work_rate_per_hr
+print("your weekly earnings is : ", emp_earnings)
