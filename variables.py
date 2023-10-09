@@ -75,9 +75,9 @@ import math
 
 # day 3 exercise 
 
-age = 3
+# age = 3
 
-height = 5.20
+# height = 5.20
 
 
 
@@ -120,61 +120,61 @@ height = 5.20
 # 0 = 2x - 2
 # 2x = 2
 # x = 2/2
-x_intercept = 1
+# x_intercept = 1
 
-slope_task8 = 2
+# slope_task8 = 2
 
 # y intercept
 
 # y = 2x - 2
 # # set x = 0 and solve for y 
 # y = 2(0) - 2
-y_intercept= -2
-print("x-intercept : ", x_intercept, " y-intercept : ", y_intercept, "and their slope is : ", slope_task8)
+# y_intercept= -2
+# print("x-intercept : ", x_intercept, " y-intercept : ", y_intercept, "and their slope is : ", slope_task8)
 
-x1, y1 = 2,2
-x2, y2 = 6, 10
+# x1, y1 = 2,2
+# x2, y2 = 6, 10
 
-slope_task9 = (y2-y1)  / (x2-x1)
+# slope_task9 = (y2-y1)  / (x2-x1)
 
-euclidean_dist = ((x1 - y1 )**2 + (x2 - y2)**2) ** 0.5
+# euclidean_dist = ((x1 - y1 )**2 + (x2 - y2)**2) ** 0.5
 
-print(slope_task9, euclidean_dist)
+# print(slope_task9, euclidean_dist)
 
-print(slope_task8 == slope_task9)
+# print(slope_task8 == slope_task9)
 
-print('9.8' == 10)
+# print('9.8' == 10)
 
-code = 'python'
-code2 = 'dragon'
+# code = 'python'
+# code2 = 'dragon'
 
-print(len(code))
-print(len(code2))
-print(code == code2)
+# print(len(code))
+# print(len(code2))
+# print(code == code2)
 
-if 'on' in code and 'on' in code2:
-    print("'on' is found both words")
-else:
-    print("'on' is not found in both words")
+# if 'on' in code and 'on' in code2:
+#     print("'on' is found both words")
+# else:
+#     print("'on' is not found in both words")
 
-statement = 'I hope this course is not full of jargon'
-if 'jargon' in statement:
-   print('jargon is present in the statement')
-else:
-    print('jargon not present in the statement')
+# statement = 'I hope this course is not full of jargon'
+# if 'jargon' in statement:
+#    print('jargon is present in the statement')
+# else:
+#     print('jargon not present in the statement')
 
-if 'on' in code and 'on' in code2:
-    print('there is no  on in', {code}, ' and ', {code2})
-else: 
-    print('on is present in both', {code}, ' and ', {code2})
+# if 'on' in code and 'on' in code2:
+#     print('there is no  on in', {code}, ' and ', {code2})
+# else: 
+#     print('on is present in both', {code}, ' and ', {code2})
 
 
-code_len = len(code)
-code_len_float =float(code_len)
-code_len_str = str(code_len_float)
-print(code_len_str)
-print(type(code_len_str))
-print(type(code_len_float))
+# code_len = len(code)
+# code_len_float =float(code_len)
+# code_len_str = str(code_len_float)
+# print(code_len_str)
+# print(type(code_len_str))
+# print(type(code_len_float))
 
 # how do i know if 4 is an even number
 
@@ -187,17 +187,72 @@ print(type(code_len_float))
 # else:
 #     print('user entered an ODD number')
 
-if 7 // 3 == int(2.7):
-    print(True)
-else:
-    print(False)
+# if 7 // 3 == int(2.7):
+#     print(True)
+# else:
+#     print(False)
 
-if '10' == 10:
-    print(True)
-else:
-    print(False)
+# if '10' == 10:
+#     print(True)
+# else:
+#     print(False)
 
-employee_hr = int(input('enter work Hours : '))
-work_rate_per_hr = int(input('Enter rate per hour: '))
-emp_earnings = employee_hr * work_rate_per_hr
-print("your weekly earnings is : ", emp_earnings)
+# employee_hr = int(input('enter work Hours : '))
+# work_rate_per_hr = int(input('Enter rate per hour: '))
+# emp_earnings = employee_hr * work_rate_per_hr
+# print("your weekly earnings is : ", emp_earnings)
+
+
+# user_year = int(input('Enter number of years you have lived :'))
+# sec_per_yr_lived = 31536000
+# calc_year_per_sec = user_year * sec_per_yr_lived
+
+# print('You have livedd for ',calc_year_per_sec, ' seconds')
+
+
+
+# define num of rows
+
+# num_rows = 5
+# for n in range(1, num_rows + 1):
+#     row_2 = 1
+#     row_2 = n ** 3
+#     row_4 = n ** 4
+#     row_5 = n ** 5
+#     row_6 = n ** 5
+ 
+#     print(f"{n} 1 {row_2} {row_3} {row_4} {row_5}")
+
+
+# num_rows = 5
+
+
+# # Iterate through each row
+# for n in range(2, num_rows + 1):
+#     # Initialize variables to store the calculated values
+#     n_squared = n ** 2
+#     n_cubed = n ** 3
+#     n_to_4th = n ** 4
+#     n_to_5th = n ** 5
+    
+#     # Print the row values
+#     print(f"{n}  1  {n_squared}   {n_cubed}  {n_to_4th}  {n_to_5th}")
+
+
+# Define the number of rows for the table
+num_rows = 5
+
+# Print the table header
+print("1 1 1 1 1")
+
+# Iterate through each row
+for n in range(2, num_rows + 1):
+    # Initialize variables to store the calculated values
+    n_power_1 = 1
+    n_power_2 = n
+    n_power_3 = n ** 2
+    n_power_4 = n ** 3
+
+    
+    # Print the row values
+    print(f"{n} {n_power_1} {n_power_2} {n_power_3} {n_power_4}")
