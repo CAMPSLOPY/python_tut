@@ -224,35 +224,28 @@ import math
 #     print(f"{n} 1 {row_2} {row_3} {row_4} {row_5}")
 
 
+# # Define the number of rows for the table
 # num_rows = 5
+
+# # Print the table header
 
 
 # # Iterate through each row
-# for n in range(2, num_rows + 1):
+# for n in range(1, num_rows + 1):
 #     # Initialize variables to store the calculated values
-#     n_squared = n ** 2
-#     n_cubed = n ** 3
-#     n_to_4th = n ** 4
-#     n_to_5th = n ** 5
+#     n_power_1 = 1
+#     n_power_2 = n
+#     n_power_3 = n ** 2
+#     n_power_4 = n ** 3
+
     
 #     # Print the row values
-#     print(f"{n}  1  {n_squared}   {n_cubed}  {n_to_4th}  {n_to_5th}")
+#     print(f"{n} {n_power_1} {n_power_2} {n_power_3} {n_power_4}")
 
 
-# Define the number of rows for the table
-num_rows = 5
+radius = 10
+pi = 3.14
+area = pi * radius ** 2
+formated_string = 'The area of circle with a radius %d is %.2f.' %(radius, area)
+print(formated_string)
 
-# Print the table header
-print("1 1 1 1 1")
-
-# Iterate through each row
-for n in range(2, num_rows + 1):
-    # Initialize variables to store the calculated values
-    n_power_1 = 1
-    n_power_2 = n
-    n_power_3 = n ** 2
-    n_power_4 = n ** 3
-
-    
-    # Print the row values
-    print(f"{n} {n_power_1} {n_power_2} {n_power_3} {n_power_4}")
