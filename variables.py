@@ -1,5 +1,7 @@
 # # 30 days of programming 
 import math
+import os
+import platform
 
 
 # # day 2 excercise 
@@ -224,10 +226,10 @@ import math
 #     print(f"{n} 1 {row_2} {row_3} {row_4} {row_5}")
 
 
-# # Define the number of rows for the table
-# num_rows = 5
+# Define the number of rows for the table
+num_rows = 5
 
-# # Print the table header
+# Print the table header
 
 
 # # Iterate through each row
@@ -243,11 +245,54 @@ import math
 #     print(f"{n} {n_power_1} {n_power_2} {n_power_3} {n_power_4}")
 
 
-radius = 10
-pi = 3.14
-area = pi * radius ** 2
-python_libraries = ['Django', 'Flask', 'NumPy', 'Matplotlib','Pandas']
-# formated_string = 'The area of circle with a radius %d is %.2f.' %(radius, area)
-formated_string = 'The following are python libraries:%s' % (python_libraries)
-print(formated_string)
+# radius = 10
+# pi = 3.14
+# area = pi * radius ** 2
+# python_libraries = ['Django', 'Flask', 'NumPy', 'Matplotlib','Pandas']
+# # formated_string = 'The area of circle with a radius %d is %.2f.' %(radius, area)
+# formated_string = 'The following are python libraries:%s' % (python_libraries)
+# print(formated_string)
+
+# word = "my name is joshua \n what is your name?"
+# print('Days\tTopics\tExercises')
+# print(word)
+
+# language = 'python'
+# first_letter = language[0]
+# print(first_letter)
+# last_letter = language[-1]
+# last_letter_2 = len(language) - 1
+# print(last_letter)
+# print(last_letter_2)
+
+
+
+
+
+def shutdown():
+    if platform.system() == "Windows":
+        os.system('shutdown -s')
+    elif platform.system() == "Linux" or platform.system() == "Darwin":
+        os.system("shutdown -h now")
+    else:
+        print("Os not supported!")
+
+def restart():
+    if platform.system() == "windows":
+        os.system("shutdown -t 0 -r -f ")
+    elif platform.system() == "Linux" or platform.system() == "Darwin":
+        os.system("reboot now")
+    else:
+        print("Os not supported!")
+command = input("use \'r\' for restart and \'s\' for shutdown: ").lower()
+
+if command == "r":
+    restart()
+if command == "s":
+    shutdown()
+else:
+    print("wrong letter")
+
+
+
 
