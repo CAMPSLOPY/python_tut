@@ -269,30 +269,30 @@ num_rows = 5
 
 
 
-def shutdown():
-    if platform.system() == "Windows":
-        os.system('shutdown -s')
-    elif platform.system() == "Linux" or platform.system() == "Darwin":
-        os.system("shutdown -h now")
-    else:
-        print("Os not supported!")
+# def shutdown():
+#     if platform.system() == "Windows":
+#         os.system('shutdown -s')
+#     elif platform.system() == "Linux" or platform.system() == "Darwin":
+#         os.system("shutdown -h now")
+#     else:
+#         print("Os not supported!")
 
-def restart():
-    if platform.system() == "windows":
-        os.system("shutdown -t 0 -r -f ")
-    elif platform.system() == "Linux" or platform.system() == "Darwin":
-        os.system("reboot now")
-    else:
-        print("Os not supported!")
-command = input("use \'r\' for restart and \'s\' for shutdown: ").lower()
+# def restart():
+#     if platform.system() == "windows":
+#         os.system("shutdown -t 0 -r -f ")
+#     elif platform.system() == "Linux" or platform.system() == "Darwin":
+#         os.system("reboot now")
+#     else:
+#         print("Os not supported!")
+# command = input("use \'r\' for restart and \'s\' for shutdown: ").lower()
 
-if command == "r":
-    restart()
-if command == "s":
-    shutdown()
-else:
-    print("wrong letter")
+# if command == "r":
+#     restart()
+# if command == "s":
+#     shutdown()
+# else:
+#     print("wrong letter")
 
-
-
-
+challenge = " thirty days of python"
+print(challenge.count('o'))
+print(challenge.rfind('th'))
