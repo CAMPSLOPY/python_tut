@@ -327,7 +327,7 @@ tech_split = tech.split(",")
 split_statement = company.split(" ")
 com_index =company[0]
 com_last_index =company[-1]
-com_tenth_index =company[10] #the index at the 10th value is space
+com_tenth_index = company[10] #the index at the 10th value is space
 # lets create an acronym from the "python for all"
 
 # step 1 
@@ -336,9 +336,17 @@ com_tenth_index =company[10] #the index at the 10th value is space
 # step 2 Iterate through each words to get the position of the first letter in each words index
 
 acronym = []
+acronym_2 = []
 words = company_3.split()
 
 for word in words:
-    acronym +=word[0]
-
+    word = word[0]
+    acronym.append(word)
 print(acronym)
+
+
+words_2 = concat_statement_2.split()
+
+for word in words_2:
+    acronym_2 += word[0]
+print(acronym_2)
