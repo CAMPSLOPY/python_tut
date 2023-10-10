@@ -265,7 +265,7 @@ num_rows = 5
 # print(last_letter)
 # print(last_letter_2)
 
-
+# print("hello world!")
 
 
 
@@ -293,6 +293,28 @@ num_rows = 5
 # else:
 #     print("wrong letter")
 
-challenge = " thirty days of python"
-print(challenge.count('o'))
-print(challenge.rfind('th'))
+# challenge = " thirty days of python"
+# print(challenge.count('o'))
+# print(challenge.rfind('th'))
+
+# CHALLENGE EXERCISE DAY 4
+statement = ['Thirty', 'Days', 'Of', 'Python']
+statement_2 = ['Coding', 'For' , 'All']
+concat_statement = ' '.join(statement)
+concat_statement_2 = ' '.join(statement_2)
+print(concat_statement_2)
+
+company = concat_statement_2
+company_len = len(company)
+block_case = company.upper()
+small_case = company.lower()
+capitalize_comp = company.capitalize()
+title_comp = company.title()
+swap_comp = company.swapcase()
+slice_comp = company[0:6]
+state = "Coding"
+
+if(company.__contains__(state)):
+    print(f"{state} is avalable in the statement")
+else:
+    print(f"{state} not available in the statement")
