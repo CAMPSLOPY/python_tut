@@ -58,17 +58,27 @@ F_idx =company.index('F')
 r_idx =company.rfind('i')
 print(r_idx)
 
-sen_statement = 'You cannot end a sentence with because because because is a conjunction'
-split_sent = sen_statement.split()
-remove_first_idx = split_sent.remove("because")
-print(remove_first_idx)
-print(split_sent)
+data = 'You cannot end a sentence with because because because is a conjunction'
+start_index = data.index('because')
+end_index =start_index + len("because because because")
+desired_phrase = data[start_index:end_index]
+print(desired_phrase)
 
 
-# split the words
-#  remove the all the because using their Index
-# join the rest of the statement together
-# print your final result
+tj= 'Coding For All'
+tj_check = tj.startswith("Coding")
+tj_ends = tj.endswith("Coding")
+print(tj_ends)
 
-# find_word = sen_statement.rindex("because")
-# print(find_word)
+name_space = '   Coding For All      ' 
+name = name_space.strip()
+print(name)
+
+thirty_days_of_python = "iden"
+
+print(thirty_days_of_python.isidentifier())
+
+lib_py = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+lib_py_join = "Hash"
+lib_py.insert(5,lib_py_join)
+print(lib_py)
