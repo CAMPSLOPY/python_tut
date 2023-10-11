@@ -52,3 +52,23 @@ words_2 = concat_statement_2.split()
 for word in words_2:
     acronym_2 += word[0]
 print(acronym_2)
+
+C_idx =company.index('C')
+F_idx =company.index('F')
+r_idx =company.rfind('i')
+print(r_idx)
+
+sen_statement = 'You cannot end a sentence with because because because is a conjunction'
+split_sent = sen_statement.split()
+remove_first_idx = split_sent.remove("because")
+print(remove_first_idx)
+print(split_sent)
+
+
+# split the words
+#  remove the all the because using their Index
+# join the rest of the statement together
+# print your final result
+
+# find_word = sen_statement.rindex("because")
+# print(find_word)
