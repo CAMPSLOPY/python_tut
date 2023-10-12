@@ -79,6 +79,12 @@ thirty_days_of_python = "iden"
 print(thirty_days_of_python.isidentifier())
 
 lib_py = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
-lib_py_join = "Hash"
-lib_py.insert(5,lib_py_join)
-print(lib_py)
+# lib_py_join = "Hash"
+# lib_py.insert(5,lib_py_join)
+
+
+# or 
+
+lib_py_join = "# ".join(lib_py)
+print(lib_py_join)
+
