@@ -88,3 +88,28 @@ lib_py = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
 lib_py_join = "# ".join(lib_py)
 print(lib_py_join)
 
+
+complete = " i am enjoying this challenge.\n I just wonder what is next"
+print(complete)
+
+bio_data = "name\tage\tcountry\tcity"
+print(bio_data)
+write_bio = 'Asabeneh\t250\tFinland\t4Helsinki'
+
+print(write_bio)
+
+radius = 10
+area = 3.14 * radius ** 2
+result = "The area of a circle with radius %d is %.0f meters square." %(radius,area)
+print(result)
+
+
+a= 8 
+b = 6
+print(f"{a} + {b} = {a + b}")
+print(f"{a} - {b} = {a - b}")
+print(f"{a} * {b} = {a * b}")
+print(f"{a} / {b} = {a / b:.2f}")
+print(f"{a} % {b} = {a % b}")
+print(f"{a} // {b} = {a // b}")
+print(f"{a} ** {b} = {a ** b}")
