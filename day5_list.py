@@ -17,3 +17,15 @@ print(list1)
 empty = ['banana', 'orange', 'mango', 'lemon','lime','gun']
 empty_len = len(empty)
 print(empty_len)
+
+mid = empty[len(empty)//2]
+
+mid = len(empty)//2
+mid_item = empty[mid]
+# print last item in the index 
+last = len(empty) - 1
+last_item_index = last
+last_item = empty[last_item_index]
+
+mixed_data_types = [31]
+print(last_item)
