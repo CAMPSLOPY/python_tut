@@ -58,6 +58,28 @@ print(it_companies)
 
 does_exist = "Google" in it_companies
 
-xx = it_companies.sort()
+# xx = it_companies.sort()
+it_companies.reverse()
+
+a = slice(3)
+b = it_companies[a]
 print(it_companies)
+
+# slice out the first three from the element 
+ba = it_companies[0::3]
+print(ba)
+
+# slice out the last 3 from the list 
+bc = it_companies[5::]
+# slice the last 3 elements  from the list 
+print(bc)
+# slice out the middle IT company from the list 
+bb = it_companies[::]
+
+bd = len(it_companies)//2 
+be = it_companies[bd]
+bf = slice(be)
+
+print(it_companies)
+
 
