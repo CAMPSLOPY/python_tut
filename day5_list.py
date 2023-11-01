@@ -66,7 +66,7 @@ b = it_companies[a]
 print(it_companies)
 
 # slice out the first three from the element 
-ba = it_companies[0::3]
+ba = it_companies[::3]
 print(ba)
 
 # slice out the last 3 from the list 
@@ -74,12 +74,34 @@ bc = it_companies[5::]
 # slice the last 3 elements  from the list 
 print(bc)
 # slice out the middle IT company from the list 
-bb = it_companies[::]
 
+# remove the middle IT company from the list
 bd = len(it_companies)//2 
-be = it_companies[bd]
-bf = slice(be)
+b_middle = it_companies[bd]
+bf = it_companies.remove(b_middle)
 
-print(it_companies)
+# remove the first item in the list of the tech companies
+b_first_item_index = it_companies[0]
+b_first_item = it_companies.remove(b_first_item_index)
+
+# remove the last IT company from the list
+# step - 1 get the index numerical value of the last element in the list 
+last_it_comp = len(it_companies) - 1
+# attach the numerical value to the it company to get the string value of the last element in the list
+last_it_comp_index = it_companies[last_it_comp]
+# final step- remove the last element in the list using the remove method
+last_it_comp_remove = it_companies.remove(last_it_comp_index)
+
+# remove all the items in the list
+it_companies.clear()
+
+# destroy the variable it_companies 
+del it_companies
+
+# Join the following lists
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+fs = front_end + back_end
+print(fs)
 
 
