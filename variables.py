@@ -334,19 +334,3 @@ com_tenth_index = company[10] #the index at the 10th value is space
 #  split the statement into individual elements
 
 # step 2 Iterate through each words to get the position of the first letter in each words index
-
-acronym = []
-acronym_2 = []
-words = company_3.split()
-
-for word in words:
-    word = word[0]
-    acronym.append(word)
-print(acronym)
-
-
-words_2 = concat_statement_2.split()
-
-for word in words_2:
-    acronym_2 += word[0]
-print(acronym_2)
