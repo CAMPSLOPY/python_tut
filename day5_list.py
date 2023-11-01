@@ -18,6 +18,8 @@ empty = ['banana', 'orange', 'mango', 'lemon','lime','gun']
 empty_len = len(empty)
 print(empty_len)
 
+
+# find the middle number
 mid = empty[len(empty)//2]
 
 mid = len(empty)//2
@@ -27,5 +29,35 @@ last = len(empty) - 1
 last_item_index = last
 last_item = empty[last_item_index]
 
-mixed_data_types = [31]
-print(last_item)
+mixed_data_types = ['tola',31,6.0,"single","brno"]
+it_companies = [ "Facebook", "Google", "Microsoft","Apple","IBM","Oracle","Amazon"]
+print(len(it_companies))
+# print the first company 
+first_comp = it_companies[0]
+#find the middle company
+middle_comp_index = len(it_companies) // 2
+middle_comp = it_companies[middle_comp_index]
+
+
+# this is to get the last company in the list 
+last_comp_index = len(it_companies) - 1
+last_comp =it_companies[last_comp_index]
+it_companies[6] = "Adidas"
+
+# insert a new company in the middle
+
+find_middle_comp = len(it_companies)//2
+it_companies[find_middle_comp] = "FeFundinfo"
+
+
+to_Upper = it_companies[2]
+x = it_companies.extend("£")
+print(it_companies)
+
+# check if a certain company exist in the List
+
+does_exist = "Google" in it_companies
+
+xx = it_companies.sort()
+print(it_companies)
+
