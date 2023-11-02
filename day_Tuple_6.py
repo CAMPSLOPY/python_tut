@@ -20,4 +20,21 @@ else:
     print("False")
 #  to delete an entire tuple 
 del new_mars
-print(new_mars)
+
+
+# EXCERCISE DAY 6 
+
+BM = ()
+
+brother = ("david")
+sister = ("bukky")
+mother = "wura"
+father = "shobowale"
+siblings = brother + " "+ sister + " " + father + " " + mother
+family_members = siblings
+
+
+len_siblings = len(siblings)
+
+print(family_members)
+print(len_siblings)
