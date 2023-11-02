@@ -99,9 +99,30 @@ it_companies.clear()
 del it_companies
 
 # Join the following lists
+fullstack = []
 front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 back_end = ['Node','Express', 'MongoDB']
 fs = front_end + back_end
-print(fs)
+fullstack.extend(fs)
+fullstack.insert(5,"Python")
+fullstack.insert(6,"SQL")
+print(fullstack)
+
+
+# numerical cal
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+# sort the list and find the min and max age.
+
+# step - 1 sort the list
+age_sort = ages.sort()
+# step - 2 find the min
+min_age = min(ages)
+max_age = max(ages)
+ages.append(min_age)
+ages.append(max_age)
+ages.sort()
+print(ages)
 
 
