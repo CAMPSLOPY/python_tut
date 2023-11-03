@@ -25,16 +25,27 @@ del new_mars
 # EXCERCISE DAY 6 
 
 BM = ()
+brother = ("josh")
+sister = (" jane ")
+mom = (" hally ")
+father = (" sam ")
+siblings = brother + sister + father + mom
+family_members = ("brother", "sister", "father", "mom")
+(bro, sis, *parent) = family_members
+print(parent)
 
-brother = ("david")
-sister = ("bukky")
-mother = "wura"
-father = "shobowale"
-siblings = brother + " "+ sister + " " + father + " " + mother
-family_members = siblings
+dad = list(family_members)
+print(dad)
 
 
-len_siblings = len(siblings)
+food_stuff_tp = ("Apple", "Mango", "Avocado","lettuce", "beef","chicken")
+food_stuff_lt = list(food_stuff_tp)
 
-print(family_members)
-print(len_siblings)
+mid_tp = len(food_stuff_tp) // 2 
+mid_tp_index_val = food_stuff_tp[mid_tp]
+
+n = len(k // 2)
+print(mid_tp_index_val)
+
+
+
