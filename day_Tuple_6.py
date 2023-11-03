@@ -38,14 +38,30 @@ dad = list(family_members)
 print(dad)
 
 
-food_stuff_tp = ("Apple", "Mango", "Avocado","lettuce", "beef","chicken")
+food_stuff_tp = ("Apple", "Mango", "Avocado","lettuce", "beef","chicken","bread")
 food_stuff_lt = list(food_stuff_tp)
 
-mid_tp = len(food_stuff_tp) // 2 
-mid_tp_index_val = food_stuff_tp[mid_tp]
+mid_tp = len(food_stuff_lt) // 2 
+mid_tp_index_val = food_stuff_lt[mid_tp]
 
-n = len(k // 2)
-print(mid_tp_index_val)
+# get the length of the entire list
+n = len(food_stuff_lt)
+
+# if the middle item is an even number then calculate both figures and then divide by 2
+if n % 2 == 0:
+    # find the first middle item in the list
+    mid1 = food_stuff_lt[n // 2 -1]
+    # find the second middle item in the list
+    mid2 = food_stuff_lt[n // 2]
+    # add the two items together and then divide by to find the middle item
+    midpoint = (mid1 + mid2) / 2
+    print(midpoint)
+
+    # if the item is an odd number then print the item
+else:
+    mid3 = food_stuff_lt[n // 2]
+    print(mid3)
+
 
 
 
