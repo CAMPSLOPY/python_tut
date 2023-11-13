@@ -23,6 +23,7 @@
 
 # remove_fruit= fruits.pop
 # print(remove_fruit)
+import threading
 
 it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
 find_length = len(it_companies)
@@ -77,21 +78,74 @@ print(name)
 # Combine = list(zip(names,heights))
 # print(Combine)
 
-ingredients = ["milk", "sugar", "vanilla extract", "dough", "chocolate"]
+# ingredients = ["milk", "sugar", "vanilla extract", "dough", "chocolate"]
 
 
-# using for loop with range
-for i in range(len(ingredients)):
-    # print(i)
-    if i <= 4:
-        print(ingredients[i])
+# # WHILE LOOP to output the same as the FOR loop
+
+# length = len(ingredients)
+# index = 0
+
+# while index < length:
+#     print(ingredients[index])
+#     index += 1
+
+
+# using for-loop with range on a list 
+# for i in range(len(ingredients)):
+#     # print(i)
+#     if i <= 4:
+#         print(ingredients[i], i)
     
 
-# using just for loop
-for ing in ingredients:
-    print(ing)
+# # using just for-loop on a list 
+# for ing in ingredients:
+#     print(ing)
 
 
 
 # for i in range(10,0,-1):
 #     print(i)
+
+
+# python_topics = ["variables", "control flow", "loops", "modules", "classes"]
+
+
+# for pyt in range(len(python_topics)):
+#     if pyt < 4:
+#         print("I am Learning", python_topics[pyt])
+
+
+# for pyt in python_topics:
+#     print(pyt)
+
+
+items_on_sale = ["blue shirt", "striped socks", "knit dress", "red headband", "dinosaur onesie"]
+
+# look for red head band in the list using for LOOP 
+
+for items in range(len(items_on_sale)):
+    if items == 3:
+        print(items_on_sale[items])
+        break
+
+
+
+print("Checking through the sale list....")
+
+
+
+for items in items_on_sale:
+    if items == "red headband":
+        print(items)
+        break
+
+
+big_number_list = [1, 2, -1, 4, -5, 5, 2, -9]
+
+# print only the positive numbers 
+
+for i in big_number_list:
+    if i <= 0:
+        continue
+    print(i)
