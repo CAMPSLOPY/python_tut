@@ -72,7 +72,26 @@ print(name)
 # zip METHOD IN PYTHON
 
 
-names = ["Jenny", "Alexus", "Sam", "Grace"]
-heights = [61, 70, 67, 64]
-Combine = list(zip(names,heights))
-print(Combine)
+# names = ["Jenny", "Alexus", "Sam", "Grace"]
+# heights = [61, 70, 67, 64]
+# Combine = list(zip(names,heights))
+# print(Combine)
+
+ingredients = ["milk", "sugar", "vanilla extract", "dough", "chocolate"]
+
+
+# using for loop with range
+for i in range(len(ingredients)):
+    # print(i)
+    if i <= 4:
+        print(ingredients[i])
+    
+
+# using just for loop
+for ing in ingredients:
+    print(ing)
+
+
+
+# for i in range(10,0,-1):
+#     print(i)
