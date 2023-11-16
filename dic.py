@@ -12,3 +12,12 @@ person = {
         'zipcode':'02210'
     }
     }
+
+person["skills"][4] = "PHP"
+
+
+# The Key() method returns the result from the dictionary as a list
+
+#  Values() Returns the key values in the dictionary as a List.
+print(person.values())
+# print(person)
