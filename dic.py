@@ -21,3 +21,41 @@ person["skills"][4] = "PHP"
 #  Values() Returns the key values in the dictionary as a List.
 print(person.values())
 # print(person)
+
+
+dog = {"name" : "bruno",
+       "color": "black",
+       "breed": "BullDog",
+       "legs": 4,
+       "age" : "12"}
+
+student = {"first_name": "Tola",
+           "Last_name": "shobo",
+           "gender": "Male",
+           "age": 31,
+           "marital_status": "single",
+           "skills":["python", "Excel", "SQL", "Power Query"],
+           "country": "Nigeria",
+           "Address":{
+               "Street": "Ceska",
+               "City": "Brno"
+           }
+           }
+
+print(len(student))
+skills_info = student["skills"]
+
+student["skills"].append("Ms word")
+
+print(type(skills_info))
+print(student.keys())
+print(student.values())
+get_tuples = student.items()
+print(get_tuples)
+
+del student["Address"]
+
+print(student)
+
+del dog
+print(dog)
