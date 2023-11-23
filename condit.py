@@ -109,6 +109,7 @@ person = {
 get_skills = person.get("skills")
 
 
+
 # convert it to integer to be able to access it 
 n = len(get_skills)
 
@@ -136,3 +137,16 @@ elif "Node" in get_skills and "Python" in get_skills and "MongoDB" in get_skills
     print("He is a backend developer")
 else:
     print("Unknown title")
+
+
+get_fname = person.get("first_name")
+get_lname = person.get("last_name")
+married = person.get("is_marred")
+get_country = person.get("country")
+get_fullname = get_fname + " " + get_lname 
+
+print(get_fullname)
+print(married)
+
+if married is True:
+    print(f"{get_fullname} lives in {get_country}. He is married")
