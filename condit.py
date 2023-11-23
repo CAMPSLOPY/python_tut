@@ -70,14 +70,69 @@
 
 # check SEASON of the year 
 
-Enter_season = str(input("Enter Season: "))
-season = Enter_season.lower()
+# Enter_season = str(input("Enter Season: "))
+# season = Enter_season.lower()
 
-if season in ["September","October", "November"]:
-    print("Autumn")
-elif season in ["December","January", "February"]:
-    print("Winter")
-elif season in ["March", "April", "May"]:
-    print("Spring")
+# if season in ["September","October", "November"]:
+#     print("Autumn")
+# elif season in ["December","January", "February"]:
+#     print("Winter")
+# elif season in ["March", "April", "May"]:
+#     print("Spring")
+# else:
+#     print("Summer")
+
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+
+mod_fruits = fruits.append("Orange")
+# print(fruits)
+
+if "lime" in fruits:
+    print("That fruit already exist in the list")
 else:
-    print("Summer")
+    print("Fruit does not exist! Please add to it the next list")
+
+# DICTIONARY PYTHON
+person = {
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_marred': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+      }
+    }
+get_skills = person.get("skills")
+
+
+# convert it to integer to be able to access it 
+n = len(get_skills)
+
+# get the middle item in the skills list 
+# we will write a query that checks if two numbers are the middle items if not print out the only middle item
+if n % 2 == 0:
+   #  get the last middle item 
+   mid_1 = get_skills[n // 2 -1]
+   mid_2 = get_skills[n // 2]
+   middle = [mid_1 + mid_2] / 2
+   print(middle)
+else:
+    mid3 = get_skills[n // 2]
+    print(mid3)
+   
+if "Python" in get_skills:
+    print("Python")
+
+
+if "JavaScript" in get_skills and "React" in get_skills:
+    print("He is a front end developer")
+elif "React" in get_skills and "Node" in get_skills and "MongoDB" in get_skills:
+    print("He is a fullstack developer")
+elif "Node" in get_skills and "Python" in get_skills and "MongoDB" in get_skills:
+    print("He is a backend developer")
+else:
+    print("Unknown title")
