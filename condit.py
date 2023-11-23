@@ -5,15 +5,15 @@
 
 # Task 1
 
-# user_input = int(input("Enter your age:"))
+# Enter_season = int(input("Enter your age:"))
 # age_limit = 18
 # # stat = 18
 
-# if user_input >= age_limit:
+# if Enter_season >= age_limit:
 #     print("You are old enough to learn to drive ")
-# elif user_input < age_limit:
+# elif Enter_season < age_limit:
 #     # we will subtract the user input from the age limit to get the remaining years needed before learning how to drive 
-#     counter = age_limit - user_input
+#     counter = age_limit - Enter_season
 #     print(f"you need {counter} more years to learn to drive")
 
 
@@ -37,12 +37,47 @@
 
 # TASK 3 
 
-A = int(input("Enter Number one: "))
-B = int(input("Enter Number two: "))
+# A = int(input("Enter Number one: "))
+# B = int(input("Enter Number two: "))
 
-if A > B:
-   print(A, "is greater than", B)
-elif A < B:
-   print(A, "is smaller", B)
+# if A > B:
+#    print(A, "is greater than", B)
+# elif A < B:
+#    print(A, "is smaller", B)
+# else:
+#    print("Both are of the same value")
+
+
+
+   # write a code that gives grade to students according to their scores 
+
+# grade = int(input("Enter your Score:"))
+
+
+# if grade > 80 and grade <=100:
+#    print("Student Grade is A")
+# elif grade > 70 and grade <= 79:
+#    print("Student grade is B")
+# elif grade > 60 and grade <= 69:
+#    print("Student grade is C")
+# elif grade >= 50 and grade <= 59:
+#    print("Student grade is C")
+# elif grade <= 49:
+#    print("Student Grade is F")
+# else:
+#    print("Score not within the grade range")
+
+
+# check SEASON of the year 
+
+Enter_season = str(input("Enter Season: "))
+season = Enter_season.lower()
+
+if season in ["September","October", "November"]:
+    print("Autumn")
+elif season in ["December","January", "February"]:
+    print("Winter")
+elif season in ["March", "April", "May"]:
+    print("Spring")
 else:
-   print("Both are of the same value")
+    print("Summer")
