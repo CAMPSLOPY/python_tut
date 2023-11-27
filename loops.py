@@ -57,11 +57,35 @@ for key in person:
 #  if n % 2 == 0:
 # print even numbers
 
-for n in range(0,101):
-    if n % 2 == 0:
-        addit = []
-        print(n, "is an even number in the loop")
+# for n in range(0,101):
+#     if n % 2 == 0:
+       
+#         print(n, "is an even number in the loop")
 
-for x in range(0, 100):
+# for x in range(0, 100):
+#     if x % 2:
+#         print(x, "is an odd number in the loop")
+
+
+# PRINT the sum of all  numbers in the loop
+# result = 0
+# for x in range(0, 101):
+#     result += x
+#     print(result)
+
+
+# PRINT SUM OF ALL THE EVEN NUMBERS IN THE LOOP
+
+even_Result = 0
+
+# for x in range(0,101):
+#     if x % 2 == 0:
+#         even_Result += x
+#         print(even_Result, "These are the even numbers")
+
+# PRINT THE SUM OF ALL THE ODD NUMBERS IN THE LOOP
+
+for x in range(0,101):
     if x % 2:
-        print(x, "is an odd number in the loop")
+        even_Result += x
+        print(even_Result, "These are the odd numbers")
