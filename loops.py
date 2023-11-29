@@ -2938,20 +2938,20 @@ print("we have  a total of ", all_language_index, "languages in the data")
 
 # find the ten most spoken languages  from the data
 
-language_frequency = {}
+language_speaker_counter = {}
 
 for country in countries_data:
     for language in country["languages"]:
         # lets append the languages to a new list to access the language differently
         all_language.append(language)
         for n in all_language:
-            if n in language_frequency:
-                language_frequency[n]+= 1
+            if n in language_speaker_counter:
+                language_speaker_counter[n]+= 1
             else:
-                language_frequency[n] = 1
+                language_speaker_counter[n] = 1
 
-for n, frequency in language_frequency.items():
-    if frequency > 10:
+for n, counter in language_speaker_counter.items():
+    if counter > 10:
         print(n, "is spoken more than 10 times in the list")
         
 
