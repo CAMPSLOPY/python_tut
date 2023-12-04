@@ -2927,31 +2927,109 @@ all_language = []
 all_language_index = []
 
 # we have been able to find the total number of languages in the data
-for country in countries_data:
-    # print(country)
-    for language in country["languages"]:
-        all_language.append(language)
-        all_language_index = len(all_language)
-print("we have  a total of ", all_language_index, "languages in the data")
+# for country in countries_data:
+#     # print(country)
+#     for language in country["languages"]:
+#         all_language.append(language)
+#         all_language_index = len(all_language)
+# print("we have  a total of ", all_language_index, "languages in the data")
 
 
 
-# find the ten most spoken languages  from the data
+# # find the ten most spoken languages  from the data
 
-language_speaker_counter = {}
+# language_speaker_counter = {}
 
-for country in countries_data:
-    for language in country["languages"]:
-        # lets append the languages to a new list to access the language differently
-        all_language.append(language)
-        for n in all_language:
-            if n in language_speaker_counter:
-                language_speaker_counter[n]+= 1
-            else:
-                language_speaker_counter[n] = 1
+# for country in countries_data:
+#     for language in country["languages"]:
+#         # lets append the languages to a new list to access the language differently
+#         all_language.append(language)
+#         for n in all_language:
+#             if n in language_speaker_counter:
+               
+#                 language_speaker_counter[n]+= 1
+#             else:
+#                 language_speaker_counter[n] = 1
 
-for n, counter in language_speaker_counter.items():
-    if counter > 10:
-        print(n, "is spoken more than 10 times in the list")
-        
+# for n, counter in language_speaker_counter.items():
+#     if counter > 10:
+#         print(n, "is spoken more than 10 times in the list")
+all_country_names = []
 
+country_counter = {}
+
+
+country_population = []
+
+
+# bio = {'name': 'Zimbabwe', 'capital': 'Harare', 'languages': ['English', 'Shona', 'Northern Ndebele'], 'population': 14240168, 'flag': 'https://restcountries.eu/data/zwe.svg', 'currency': 'Botswana pula'}
+
+# for key in bio:
+#     if key == "population":
+#         flags.append(bio[key])
+#         print(flags)
+
+
+# Sort the list of dictionaries by population in descending order using a for loop
+# for i in range(len(countries_data)):
+#     for j in range(i + 1, len(countries_data)):
+#         if countries_data[i]["population"] < countries_data[j]["population"]:
+#             countries_data[i], countries_data[j] = countries_data[j], countries_data[i]
+
+# # Get the first 10 elements of the sorted list using a for loop
+# top_10_countries = countries_data[:10]
+
+# # Print the name and population of each country in the top 10 list using a for loop
+# for country in top_10_countries:
+#     print(country["name"], country["population"])
+
+
+
+for n in range(len(countries_data)):
+    for j in range(n + 1, len(countries_data)):
+    #    filter in descending order
+       if countries_data[n]["population"] < countries_data[j]["population"]:
+           countries_data[n], countries_data[j] = countries_data[j], countries_data[n]
+
+# get the first to elements in the sorted list using a for loop
+top_10_countries = countries_data[:10]
+
+for country in top_10_countries:
+    print(country["name"], country["population"])
+
+
+print(countries_data)
+
+
+numbers = [2,4,6,1,1,1]
+
+for num in numbers:
+    if num % 2 == 0:
+        continue
+    print(num)
+
+
+for i in range(4):
+    print("me")
+
+
+
+prices = [30, 25, 40, 20, 20, 35, 50, 35]
+
+total_price = 0
+
+for price in prices:
+    total_price = total_price + price
+
+
+
+average = total_price / len(prices)
+print(f"average Haircut price: {average}")
+
+
+# for price in prices:
+#     print(price - 5)
+
+
+new_prices = [price - 5 for price in prices]
+print(new_prices)
