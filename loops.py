@@ -3015,8 +3015,11 @@ for i in range(4):
 
 
 prices = [30, 25, 40, 20, 20, 35, 50, 35]
+last_week = [2, 3, 5, 8, 4, 4, 6, 2]
 
 total_price = 0
+
+total_revenue = 0
 
 for price in prices:
     total_price = total_price + price
@@ -3027,9 +3030,26 @@ average = total_price / len(prices)
 print(f"average Haircut price: {average}")
 
 
-# for price in prices:
-#     print(price - 5)
+for price in prices:
+    print(price - 5)
 
 
 new_prices = [price - 5 for price in prices]
 print(new_prices)
+
+
+hairstyles = ["bouffant", "pixie", "dreadlocks", "crew", "bowl", "bob", "mohawk", "flattop"]
+
+
+for i in range(0, len(hairstyles)):
+    total_revenue = prices[i] * last_week[i]
+print("Total Revenue: ",total_revenue)
+
+
+cuts_under_30 = [hairstyles[i] for i in range(0,len(new_prices) - 1) if new_prices[i] < 30]
+print(cuts_under_30)
+
+
+# for i in range(0, len(new_prices)- 1):
+#     if new_prices[i] < 30:
+#         print(hairstyles[i])
