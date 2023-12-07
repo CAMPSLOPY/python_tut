@@ -1,3 +1,13 @@
+# 
+from datetime import datetime
+
+
+life = datetime(1992,5,24) - datetime.now() 
+
+print(life)
+
+
+
 # person = {
 #     'first_name': 'Asabeneh',
 #     'last_name': 'Yetayeh',
