@@ -124,11 +124,13 @@ def  print_list(*n):
 print_list(3,1,1,7,8)
 
 def reverse_list(*arr):
+    reversed_list = []
     for i in range(len(arr), 0, -1):
-        print(i)
+        reversed_list.append(i)
+    return reversed_list
 
 
 
 
 
-reverse_list(1,2,3,4,5,6)
+print(reverse_list(1,2,3,4,5,6))
