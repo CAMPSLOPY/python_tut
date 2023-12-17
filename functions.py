@@ -168,6 +168,10 @@ print(add_item(list_items, "muyi"))
 numbers = [2, 7, 9]
 
 
+
+
+print(sum)
+
 def remove_item(original_list, new_item):
     
     # check if new item already exist in the original list
@@ -183,20 +187,30 @@ def remove_item(original_list, new_item):
 print(remove_item(numbers, 9))
 
 
-# number_2 = 3
-
-# numbers.append(number_2)
-
-# print(numbers)
 
 
 
 
-# for num in range(len(numbers)):
-#     print(num)
-#     if num == 3:
-#         numbers.remove(num)
-#         print(numbers)
+for num in range(len(numbers)):
+    print(num)
+    if num == 3:
+        numbers.remove(num)
+        print(numbers)
 
+
+
+
+
+
+
+def sum_of_numbers(num):
+    sum = 0
+    for n in range(num):
+        sum +=  n + 1
+    return sum
+
+
+
+print(sum_of_numbers(5))
 
 
