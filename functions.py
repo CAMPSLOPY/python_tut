@@ -191,11 +191,11 @@ print(remove_item(numbers, 9))
 
 
 
-for num in range(len(numbers)):
-    print(num)
-    if num == 3:
-        numbers.remove(num)
-        print(numbers)
+# for num in range(len(numbers)):
+#     print(num)
+#     if num == 3:
+#         numbers.remove(num)
+#         print(numbers)
 
 
 
@@ -211,6 +211,47 @@ def sum_of_numbers(num):
 
 
 
-print(sum_of_numbers(5))
+# print(sum_of_numbers(5))
 
 
+
+
+
+
+# oddd = [1,2,3,4,5,6]
+# odd_adder = 0
+# eve_list =[]
+# for odd in oddd:
+#     if odd % 2:
+#         print(odd)
+#         odd_adder += odd
+# print(odd_adder)
+
+def sum_of_even(even_number):
+    even_sum = 0
+    even_number_list = []
+    for eve in range(even_number):
+        # attach the even number to a list
+        even_number_list.append(eve)
+    for even in even_number_list:
+        if even % 2 == 0:
+            even_sum += even
+    return even_sum
+        
+
+
+
+def sum_of_odd(odd_number):
+    odd_sum = 0
+    odd_number_list = []
+    for odd in range(odd_number):
+        # attach the odd number to a list
+        odd_number_list.append(odd)
+    for od in odd_number_list:
+        if od % 2:
+            odd_sum += od
+    return odd_sum
+
+
+print(sum_of_even(100))
+print(sum_of_odd(100))
