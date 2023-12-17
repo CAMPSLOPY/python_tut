@@ -129,8 +129,74 @@ def reverse_list(*arr):
         reversed_list.append(i)
     return reversed_list
 
-
-
-
-
 print(reverse_list(1,2,3,4,5,6))
+
+def capitalize_list_items(*n):
+    capital = []
+    for i in range(len(n)):
+        cap = n[i].upper()
+        capital.append(cap)
+    return capital
+# print(capitalize_list_items("tola", "joshua", "fe fundinfo"))
+
+
+
+
+
+list_items = ["tola", "joshua"]
+
+# for i in range(len(list_items)):
+#     list_items.insert(0,2)
+#     print(list_items)
+#     break
+
+
+def add_item(original_list, new_item):
+
+    new_list = original_list.copy()
+
+    new_list.append(new_item)
+
+    return new_list
+
+
+print(add_item(list_items, "muyi"))
+
+
+
+
+numbers = [2, 7, 9]
+
+
+def remove_item(original_list, new_item):
+    
+    # check if new item already exist in the original list
+
+    if new_item in original_list:
+        original_list.remove(new_item)
+    else:
+        print(f"{new_item} not found in the list")
+    
+    return original_list
+    
+
+print(remove_item(numbers, 9))
+
+
+# number_2 = 3
+
+# numbers.append(number_2)
+
+# print(numbers)
+
+
+
+
+# for num in range(len(numbers)):
+#     print(num)
+#     if num == 3:
+#         numbers.remove(num)
+#         print(numbers)
+
+
+
