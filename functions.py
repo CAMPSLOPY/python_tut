@@ -255,3 +255,4 @@ def sum_of_odd(odd_number):
 
 print(sum_of_even(100))
 print(sum_of_odd(100))
+print(sum_of_odd(100))
