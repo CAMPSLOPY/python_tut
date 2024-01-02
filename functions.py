@@ -241,18 +241,30 @@ def sum_of_even(even_number):
 
 
 
+# def sum_of_odd(odd_number):
+#     odd_sum = 0
+#     odd_number_list = []
+#     for odd in range(odd_number):
+#         # attach the odd number to a list
+#         odd_number_list.append(odd)
+#     for od in odd_number_list:
+#         if od % 2:
+#             odd_sum += od
+#     return odd_sum
+
+
+
 def sum_of_odd(odd_number):
-    odd_sum = 0
+    count = 0
     odd_number_list = []
     for odd in range(odd_number):
-        # attach the odd number to a list
         odd_number_list.append(odd)
     for od in odd_number_list:
         if od % 2:
-            odd_sum += od
-    return odd_sum
+            count += od
+    return count
 
 
-print(sum_of_even(100))
-print(sum_of_odd(100))
-print(sum_of_odd(100))
+print(sum_of_odd(25))
+
+
