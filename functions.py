@@ -1,23 +1,29 @@
-def multiply_two_numbers(a,*b):
+import cmath
+
+
+def multiply_two_numbers(a, *b):
     print(a)
     for i in b:
         print(i)
 
 
-print(multiply_two_numbers(4,90))
+print(multiply_two_numbers(4, 90))
 
 
-def add_two_numbers(num1,num2):
+def add_two_numbers(num1, num2):
     return num1 + num2
 
 
-print(add_two_numbers(1,90))
+print(add_two_numbers(1, 90))
 
-def area_of_circle(r, pi = 3.14,):
+
+def area_of_circle(r, pi=3.14,):
     area = pi * r ** 2
     return area
 
+
 print(area_of_circle(34))
+
 
 def find_odd_numbers(n):
     odd_num = []
@@ -40,13 +46,14 @@ def sum_all_nums(*nums):
     return total
 
 
-print(sum_all_nums(1,2,4))
+print(sum_all_nums(1, 2, 4))
+
 
 def convert_celsius_to_fahrenheit(C):
     return (C * 9/5) + 32
 
-print(convert_celsius_to_fahrenheit(12))
 
+print(convert_celsius_to_fahrenheit(12))
 
 
 def check_season(month):
@@ -72,26 +79,20 @@ def check_season(month):
 # print(result)
 
 
-def calculate_slope(slope1,slope2,slope3,slope4):
-    m = (slope2- slope1) / (slope4 - slope3)
+def calculate_slope(slope1, slope2, slope3, slope4):
+    m = (slope2 - slope1) / (slope4 - slope3)
     return m
 
 
-
-
-
-
-x1, y1 = 1,2
+x1, y1 = 1, 2
 
 x2, y2 = 3, 4
 
-import cmath
 
 print(calculate_slope(x1, y1, x2, y2))
 
 
-
-def solve_quadratic_eqn(a,b,c):
+def solve_quadratic_eqn(a, b, c):
 
     determinant = cmath.sqrt(b**2 - 4*a*c)
 
@@ -103,25 +104,20 @@ def solve_quadratic_eqn(a,b,c):
     return solutions
 
 
-
-
-
-
-
 a_coefficient = 1
 b_coefficient = -3
 c_constant = 2
 
-print(solve_quadratic_eqn(a_coefficient,b_coefficient,c_constant))
+print(solve_quadratic_eqn(a_coefficient, b_coefficient, c_constant))
 
 
-
-
-def  print_list(*n):
+def print_list(*n):
     for i in n:
         print(i)
 
-print_list(3,1,1,7,8)
+
+print_list(3, 1, 1, 7, 8)
+
 
 def reverse_list(*arr):
     reversed_list = []
@@ -129,7 +125,9 @@ def reverse_list(*arr):
         reversed_list.append(i)
     return reversed_list
 
-print(reverse_list(1,2,3,4,5,6))
+
+print(reverse_list(1, 2, 3, 4, 5, 6))
+
 
 def capitalize_list_items(*n):
     capital = []
@@ -138,9 +136,6 @@ def capitalize_list_items(*n):
         capital.append(cap)
     return capital
 # print(capitalize_list_items("tola", "joshua", "fe fundinfo"))
-
-
-
 
 
 list_items = ["tola", "joshua"]
@@ -163,32 +158,25 @@ def add_item(original_list, new_item):
 print(add_item(list_items, "muyi"))
 
 
-
-
 numbers = [2, 7, 9]
-
-
 
 
 print(sum)
 
+
 def remove_item(original_list, new_item):
-    
+
     # check if new item already exist in the original list
 
     if new_item in original_list:
         original_list.remove(new_item)
     else:
         print(f"{new_item} not found in the list")
-    
+
     return original_list
-    
+
 
 print(remove_item(numbers, 9))
-
-
-
-
 
 
 # for num in range(len(numbers)):
@@ -198,24 +186,14 @@ print(remove_item(numbers, 9))
 #         print(numbers)
 
 
-
-
-
-
-
 def sum_of_numbers(num):
     sum = 0
     for n in range(num):
-        sum +=  n + 1
+        sum += n + 1
     return sum
 
 
-
 # print(sum_of_numbers(5))
-
-
-
-
 
 
 # oddd = [1,2,3,4,5,6]
@@ -237,8 +215,6 @@ def sum_of_even(even_number):
         if even % 2 == 0:
             even_sum += even
     return even_sum
-        
-
 
 
 # def sum_of_odd(odd_number):
@@ -253,7 +229,7 @@ def sum_of_even(even_number):
 #     return odd_sum
 
 
-
+# print(sum_of_even(100))
 def sum_of_odd(odd_number):
     count = 0
     odd_number_list = []
@@ -265,6 +241,38 @@ def sum_of_odd(odd_number):
     return count
 
 
-print(sum_of_odd(25))
+# print(sum_of_odd(25))
 
 
+numero = range(1000)
+tata = []
+tata_index = []
+# for num in numero:
+#     if num % 2:
+#         tata.append(num)
+#         tata_index = len(tata)
+# print(tata_index)
+
+
+for num in numero:
+    if num % 2 == 0:
+        tata.append(num)
+        tata_index = len(tata)
+print(tata_index)
+
+
+def evens_and_odds(number):
+    odd_counter = 0
+    even_counter = 0
+    for digit in number:
+        digit = int(digit)
+        if digit % 2 == 0:
+            even_counter = even_counter + 1
+        else:
+            odd_counter = odd_counter + 1
+    print(f"number of even digits:{even_counter}")
+    print(f"number of odd digits:{odd_counter}")
+
+
+num = range(101)
+print(evens_and_odds(num))
